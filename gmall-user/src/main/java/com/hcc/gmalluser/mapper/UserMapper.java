@@ -1,11 +1,12 @@
 package com.hcc.gmalluser.mapper;
 
-import com.hcc.gmalluser.bean.User;
-import org.apache.ibatis.annotations.Mapper;
+import com.hcc.gmalluser.bean.UmsMember;
+import tk.mybatis.mapper.common.Mapper;
+
 
 import java.util.List;
 
-@Mapper
-public interface UserMapper  {
-     List<User> selectUserQuery();
+
+public interface UserMapper extends Mapper<UmsMember> {
+     List<UmsMember> selectUserQuery();
 }

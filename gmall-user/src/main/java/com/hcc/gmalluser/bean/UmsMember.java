@@ -1,14 +1,19 @@
 package com.hcc.gmalluser.bean;
 
-import javax.persistence.Entity;
+
+import org.springframework.stereotype.Component;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
-@Entity
-public class User {
-    @Id
-    private int id;
-    private int memberLevelId;
+@Component
+public class UmsMember {
+    @Id //主键
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //主键返回策略
+    private String id;
+    private String memberLevelId;
     private String username;
     private String password;
     private String nickname;
@@ -52,19 +57,19 @@ public class User {
                 '}';
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getMemberLevelId() {
+    public String getMemberLevelId() {
         return memberLevelId;
     }
 
-    public void setMemberLevelId(int memberLevelId) {
+    public void setMemberLevelId(String memberLevelId) {
         this.memberLevelId = memberLevelId;
     }
 
