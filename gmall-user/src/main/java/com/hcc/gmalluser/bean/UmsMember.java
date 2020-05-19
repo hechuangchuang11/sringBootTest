@@ -1,6 +1,7 @@
 package com.hcc.gmalluser.bean;
 
 
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ public class UmsMember {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //主键返回策略
     private String id;
     private String memberLevelId;
+    @NotBlank(message = "用户名不能为空")
     private String username;
     private String password;
     private String nickname;
