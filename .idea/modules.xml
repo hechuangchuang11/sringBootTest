@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../spring_boot_junit/demo.iml" filepath="$PROJECT_DIR$/../spring_boot_junit/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-common-util/gmall-common-util.iml" filepath="$PROJECT_DIR$/gmall-common-util/gmall-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-user/gmall-user.iml" filepath="$PROJECT_DIR$/gmall-user/gmall-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmallapi/gmallapi.iml" filepath="$PROJECT_DIR$/gmallapi/gmallapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmallparent/gmallparent.iml" filepath="$PROJECT_DIR$/gmallparent/gmallparent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../springboot_1/springboot_1.iml" filepath="$PROJECT_DIR$/../springboot_1/springboot_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sringBootTest.iml" filepath="$PROJECT_DIR$/.idea/sringBootTest.iml" />
     </modules>

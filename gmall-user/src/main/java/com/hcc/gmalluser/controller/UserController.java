@@ -1,14 +1,13 @@
 package com.hcc.gmalluser.controller;
 
-import com.hcc.gmalluser.bean.UmsMember;
-import com.hcc.gmalluser.bean.UmsMemberReceiveAddress;
-import com.hcc.gmalluser.service.UserService;
+import com.hcc.gmall.bean.UmsMember;
+import com.hcc.gmall.bean.UmsMemberReceiveAddress;
+import com.hcc.gmall.service.UserService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -44,7 +43,7 @@ public class UserController {
         try {
             int i = userService.insertUser(umsMember);
             long end = System.currentTimeMillis();
-            logger.info("插入耗时：{}",(end - start));
+            logger.info("插入耗时：{}s",(end - start));
             return umsMember;
         } catch (Exception e) {
             logger.error("插入失败");

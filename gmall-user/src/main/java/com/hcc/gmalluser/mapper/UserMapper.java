@@ -1,8 +1,10 @@
 package com.hcc.gmalluser.mapper;
 
-import com.hcc.gmalluser.bean.UmsMember;
-import tk.mybatis.mapper.common.Mapper;
 
+
+
+import com.hcc.gmall.bean.UmsMember;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 

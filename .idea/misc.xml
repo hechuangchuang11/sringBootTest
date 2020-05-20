@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/gmall-user/pom.xml" />
         <option value="$PROJECT_DIR$/../spring_boot_junit/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_1/pom.xml" />
+        <option value="$PROJECT_DIR$/gmallparent/pom.xml" />
+        <option value="$PROJECT_DIR$/gmallapi/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-common-util/pom.xml" />
       </list>
     </option>
   </component>
